@@ -1,0 +1,271 @@
+:root {
+	/*color variables*/
+	--main-color: #383C47; /*deep pink*/
+	--font-color: #F1416F; /*white*/
+	--accent-color: #F1416F; /*navy gray*/
+	--light-accent-color: #D8D8D6; /*light gray*/
+	--color5: #4BBFAE; /*touch of teal*/
+	
+	/*font variables*/
+	--main-font: 'Roboto';
+	--heading-font: 'kembara_cintaregular';
+
+/* Color Theme Swatches in Hex 
+.Happy-Pink-Professional-1-hex { color: #FFFFFF; }
+.Happy-Pink-Professional-2-hex { color: #F1416F; }
+.Happy-Pink-Professional-3-hex { color: #383C47; }
+.Happy-Pink-Professional-4-hex { color: #D8D8D6; }
+.Happy-Pink-Professional-5-hex { color: #4BBFAE; }
+
+/* Color Theme Swatches in RGBA 
+.Happy-Pink-Professional-1-rgba { color: rgba(255, 255, 255, 1); }
+.Happy-Pink-Professional-2-rgba { color: rgba(241, 65, 111, 1); }
+.Happy-Pink-Professional-3-rgba { color: rgba(56, 60, 71, 1); }
+.Happy-Pink-Professional-4-rgba { color: rgba(216, 216, 214, 1); }
+.Happy-Pink-Professional-5-rgba { color: rgba(75, 191, 174, 1); }
+
+/* Color Theme Swatches in HSLA 
+.Happy-Pink-Professional-1-hsla { color: hsla(0, 0, 100, 1); }
+.Happy-Pink-Professional-2-hsla { color: hsla(344, 86, 60, 1); }
+.Happy-Pink-Professional-3-hsla { color: hsla(224, 11, 24, 1); }
+.Happy-Pink-Professional-4-hsla { color: hsla(60, 2, 84, 1); }
+.Happy-Pink-Professional-5-hsla { color: hsla(171, 47, 52, 1); }
+*/
+}
+
+* {
+  margin: 0px;
+  padding: 0px; 
+  outline: none;
+  border: 0px;
+} /*reset whitespace*/
+
+body {
+	font-family: var(--main-font), sans-serif;
+	/*
+	background-image: url(images/stripes.png);
+	background-position: center;
+	*/
+	background-color: rgba(216, 216, 214, .5);
+}
+
+
+h1 {
+	font-family: var(--heading-font), cursive;
+	text-align: center;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+p, table {
+	font-size: 20px;
+	padding: 20px;
+}
+
+#flex-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url(images/braingirl.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+
+.heading {
+	font: 6em var(--heading-font), cursive;
+	color: var(--font-color);
+	line-height: 275px;
+	/*
+	-webkit-text-stroke: 1.5px black;
+	*/
+}
+
+body {
+	flex: 1 1 300px;
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+footer {
+	flex: 1 1 100px;
+	display: flex; /*allows me to use flex properties to align things within the nav*/
+	align-items: center; /*aligns flex items vertically*/
+	justify-content: center;
+	color: var(--font-color);
+}
+
+#grid-portfolio{
+	display: grid;
+	justify-content: space-evenly;
+	grid-template-areas: 
+		"a b c d";
+
+
+	width: 95%;
+	margin: auto;
+	margin-top: -50px;
+}
+
+.project-box {
+	height: 200px;
+	width: 250px;
+	text-align: center;
+	padding: 0px 10px;
+	background-color: rgba(216, 216, 214, .5);
+	margin: 30px;
+	font-family: var(--main-font), sans-serif;
+	color: var(--main-color);
+	font-size: 1.5em;
+	
+
+	transition: all 1s; /*goes with .project-box:hover*/
+	
+	/*put the text vertically and horizontally in center*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.project-box:hover {
+	transform: scale(1.2, 1.2);
+	background-color: var(--accent-color);
+	color: white;
+	border: 5px solid rgb(216, 216, 214);
+}
+
+#a {
+	grid-area: a;
+}
+
+#b {
+	grid-area: b;
+}
+
+#c {
+	grid-area: c;
+}
+
+#d {
+	grid-area: d;
+}
+
+#e {
+	grid-area: e;
+	display: none;
+}
+
+#f {
+	grid-area: f;
+	display: none;
+}
+
+#about {
+	max-width: 80%;
+}
+
+#aboutHead {
+	color: var(--main-color);
+	padding: 30px;
+	font: 6em var(--heading-font), cursive;
+	background-color: rgba(216, 216, 214, .5);
+	width: 124%;
+	margin-left: -150px;
+	margin-top: 50px;
+}
+
+table{
+	margin: 10px;
+	border-collapse: collapse;
+}
+
+th, td{
+	padding: 10px;
+	border: 2px solid black;
+}
+
+th {
+	background-color: var(--accent-color);
+}
+
+td {
+	background-color: white;
+}
+
+@media only screen and (max-width: 1300px) {
+	#grid-portfolio{
+		grid-template-areas: 
+		"a b"
+		"c d"
+		"e f";
+	}
+
+	.project-box {
+		width: 300px;
+	}
+}
+
+
+@media only screen and (max-width: 726px) {
+	.project-box{
+		height: 125px;
+		width: 200px;
+	}
+
+	.heading {
+		line-height: 75px;
+		padding: 75px;
+		text-align: center;
+		color: white;
+	}
+
+	#aboutHead {
+		margin-left: -100px;
+	}
+
+}
+
+@media only screen and (max-width: 535px){
+
+	#grid-portfolio{
+		grid-template-areas: 
+		"a"
+		"b"
+		"c"
+		"d"
+		"e"
+		"f";
+	}
+
+	.heading {
+		margin-bottom: 35px;
+
+	}
+
+	#aboutHead {
+		margin-left: -75px;
+	}
+
+	.comments {
+		display: none;
+	}
+
+}
+
+/*fonts*/
+@font-face {
+    font-family: 'kembara_cintaregular';
+    src: url('fonts/kembara_cinta_demo-webfont.woff2') format('woff2'),
+         url('fonts/kembara_cinta_demo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
