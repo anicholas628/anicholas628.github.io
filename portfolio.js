@@ -13,6 +13,11 @@ addEvent("memory", "mouseout", function(e){changeWords("memory", "Animal Crossin
 addEvent("iep", "mouseover", function(e){changeWords("iep", "HTML, CSS, Javascript, Usage of form data")})
 addEvent("iep", "mouseout", function(e){changeWords("iep", "Impact Statement Generator for IEPs")})
 
+addEvent("hair", "mouseover", function(e){changeWords("hair", "HTML, Bootstrap, Font Awesome, Custom CSS")});
+addEvent("hair", "mouseout", function(e){changeWords("hair", "Elxier Hair Studio Website")});
+
+addEvent("portfolio", "mouseover", function(e){changeWords("portfolio", "HTML, CSS, Javascript, Github")});
+addEvent("portfolio", "mouseout", function(e){changeWords("portfolio", "My Github Portfolio")});
 
 function changeWords(elementId, message){
 	document.getElementById(elementId).innerHTML = message
