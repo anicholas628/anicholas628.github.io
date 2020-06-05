@@ -16,8 +16,8 @@ addEvent("iep", "mouseout", function(e){changeWords("iep", "Impact Statement Gen
 addEvent("hair", "mouseover", function(e){changeWords("hair", "HTML, Bootstrap, Font Awesome, Custom CSS")});
 addEvent("hair", "mouseout", function(e){changeWords("hair", "Elxier Hair Studio Website")});
 
-addEvent("portfolio", "mouseover", function(e){changeWords("portfolio", "HTML, CSS, Javascript, Github")});
-addEvent("portfolio", "mouseout", function(e){changeWords("portfolio", "My Github Portfolio")});
+addEvent("portfolio", "mouseover", function(e){changeWords("portfolio", "JQuery, API, JSON, HTML, CSS, Javascript, Bootstrap")});
+addEvent("portfolio", "mouseout", function(e){changeWords("portfolio", "Pokemon Go Shiny Finder")});
 
 function changeWords(elementId, message){
 	document.getElementById(elementId).innerHTML = message
