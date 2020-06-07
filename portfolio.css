@@ -73,6 +73,7 @@ p, table {
 	background-image: url(braingirl.png);
 	background-repeat: no-repeat;
 	background-position: top center;
+
 }
 
 
@@ -112,7 +113,7 @@ footer p {
 	justify-content: space-evenly;
 	grid-template-areas: 
 		"a b e" 
-		"d c f";
+		"d f c";
 
 
 	width: 95%;
@@ -266,8 +267,8 @@ table tr:last-child td:last-child {
 	#grid-portfolio{
 		grid-template-areas: 
 		"a b"
-		"c d"
-		"e f";
+		"f e"
+		"d c";
 	}
 
 	.project-box {
@@ -311,13 +312,18 @@ table tr:last-child td:last-child {
 		"b"
 		"e"
 		"d"
-		"c"
-		"f";
+		"f"
+		"c";
+	}
+
+	#flex-page {
+		background-size: 100%;
+		
 	}
 
 	.heading {
 		margin-bottom: 35px;
-
+		-webkit-text-stroke: 1.5px black;
 	}
 
 	#aboutHead {
