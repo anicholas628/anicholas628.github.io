@@ -298,6 +298,10 @@ table tr:last-child td:last-child {
 		margin-left: -100px;
 	}
 
+		body {
+		background-image: none;
+	}
+
 }
 
 @media only screen and (max-width: 535px){
@@ -333,6 +337,8 @@ table tr:last-child td:last-child {
 	.comments {
 		display: none;
 	}
+
+
 
 }
 
